@@ -21,7 +21,7 @@ import scala.util.{Failure, Success}
 
 object MetadataServiceActor {
   val MetadataInstrumentationPrefix = NonEmptyList.of("metadata")
-
+  // DELETE THIS BRANCH
   def props(serviceConfig: Config, globalConfig: Config, serviceRegistryActor: ActorRef) = Props(MetadataServiceActor(serviceConfig, globalConfig, serviceRegistryActor)).withDispatcher(ServiceDispatcher)
 }
 
